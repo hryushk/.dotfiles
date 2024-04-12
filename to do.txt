@@ -1,0 +1,44 @@
+- nixos configuration 
+(
+    - clean up
+    - home manager too
+)
+
+- notification manager
+(
+    - dunst
+    - customization
+)
+
+- notes and saves
+
+- test reinstall
+
+- hyprlock customization
+(
+    - clock
+    - colors
+    - transparency 
+    - borders 
+)
+
+- kitty customization 
+(
+    - font
+    - background
+    - shell
+)
+
+- gtk theme
+(
+    - new or fix old 
+)
+
+- declarative configuration
+(
+    - firefox
+    - obs
+    - goverlay
+)
+
+- ags bar 
