@@ -94,11 +94,11 @@
   gtk = {
     enable = true;
     theme = {      
-      name = "Graphite-Dark";
-      package = pkgs.graphite-gtk-theme.override {
-        themeVariants = [ "default" ];
+      name = "vimix-dark-grey";
+      package = pkgs.vimix-gtk-themes.override {
+        themeVariants = [ "grey" ];
         colorVariants = [ "dark" ];
-        tweaks = [ "float" ];
+        tweaks = [ "grey" ];
       };
     };
 
