@@ -14,6 +14,8 @@
 
   programs.git = {
     enable = true;
+    userName  = "hryushk";
+    userEmail = "wcaofow@tuta.io";
   };
 
   home.packages = with pkgs; [
@@ -91,13 +93,12 @@
 
   gtk = {
     enable = true;
-    theme = {
-      name = "vimix-dark-grey";
-      package = pkgs.vimix-gtk-themes.override {
-        themeVariants = [ "grey" ];
+    theme = {      
+      name = "Graphite-Dark";
+      package = pkgs.graphite-gtk-theme.override {
+        themeVariants = [ "default" ];
         colorVariants = [ "dark" ];
-        sizeVariants = [ "standard" ];
-        tweaks = [ "grey" ];
+        tweaks = [ "float" ];
       };
     };
 
