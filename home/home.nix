@@ -73,6 +73,7 @@
     acpi
     xorg.xwininfo
     openssl
+    ventoy-full
 
     # Fonts. 
     cascadia-code

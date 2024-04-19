@@ -1,0 +1,18 @@
+1) make a script for toggling menu 
+2) solution to hide empty workspaces buttons 
+3) reorganize code in eww.yuck to make ricing easer 
+the structure:
+- event box (:class ~)
+- box (:class ~)
+so on
+.[box_class] {
+	min-width: ~;
+}
+(mb I have to do something like this with eww.scss 'cause I cannot even read the code)
+4) Ricing base elements:
+- workspaces buttons size 
+- clock button size
+- menu button wifi icon indent
+5) Mb I can replace font icons with svg icons.
+
+

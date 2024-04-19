@@ -4,14 +4,6 @@
     - home manager too
 )
 
-- notification manager
-(
-    - dunst
-    - customization
-)
-
-- notes and saves
-
 - test reinstall
 
 - hyprlock customization
