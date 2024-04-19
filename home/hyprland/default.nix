@@ -2,11 +2,7 @@
 
 {
 
-    imports = [
-        ./hyprlock.nix 
-        ./hypridle.nix
-        ./hyprpaper.nix
-    ];
+    imports = [ ./hyprlock.nix ./hypridle.nix ./hyprpaper.nix ];
 
     home.packages = with pkgs; [
         hyprshot
@@ -31,6 +27,9 @@
     wayland.windowManager.hyprland = {
         enable = true;
         xwayland.enable = true;
+        package = pkgs.hyprland;
+        systemd.enable = true;
+
 
         settings = {
 

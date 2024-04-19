@@ -8,16 +8,25 @@
   services.tlp = {
     enable = true;
     settings = {
-      CPU_SCALING_GOVERNOR_ON_AC = "performance";
-      CPU_SCALING_GOVERNOR_ON_BAT = "powersave";
+      CPU_DRIVER_OPMODE_ON_AC = "guided";
+      CPU_DRIVER_OPMODE_ON_BAT = "guided";
 
-      CPU_ENERGY_PERF_POLICY_ON_BAT = "power";
+      CPU_SCALING_GOVERNOR_ON_AC = "ondemand";
+      CPU_SCALING_GOVERNOR_ON_BAT = "ondemand";
+
+      CPU_SCALING_MAX_FREQ_ON_AC = 3300000;
+      CPU_SCALING_MAX_FREQ_ON_BAT = 3300000;
+
+      CPU_ENERGY_PERF_POLICY_ON_BAT = "balance_power";
       CPU_ENERGY_PERF_POLICY_ON_AC = "performance";
 
       CPU_MIN_PERF_ON_AC = 0;
       CPU_MAX_PERF_ON_AC = 100;
       CPU_MIN_PERF_ON_BAT = 0;
       CPU_MAX_PERF_ON_BAT = 80;
+
+      RADEON_DPM_PERF_LEVEL_ON_AC = "auto";
+      RADEON_DPM_PERF_LEVEL_ON_BAT = "auto";
 
       RADEON_DPM_STATE_ON_BAT = "balanced";
       RADEON_DPM_STATE_ON_AC = "performance";

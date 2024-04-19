@@ -46,17 +46,26 @@
     isNormalUser = true;
     description = "hryu";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
+    packages = with pkgs; [ ];
   };
 
   # Packages
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [];
 
-  # Sddm, xserver
+  # Hyprland, Sddm, xserver
+  programs.hyprland.enable = true;
   services.xserver = {
     enable = true;
-    displayManager.sddm.enable = true;
+    displayManager.sddm = {
+      enable = true;
+      wayland.enable = true; 
+    };
+  };
+
+  programs.gnupg.agent = {
+    enable = true;
+    enableSSHSupport = true;
   };
 
   nix = {

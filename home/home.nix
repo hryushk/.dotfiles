@@ -2,9 +2,7 @@
 
 {
 
-  imports = [
-    ./hyprland
-  ];
+  imports = [ ./hyprland ./kitty ./dunst ];  
 
   home.username = "hryu";
   home.homeDirectory = "/home/hryu";
@@ -22,7 +20,6 @@
     # Default packages.
     wget
     vscodium
-    kitty
     tofi
     firefox
     vesktop
@@ -35,11 +32,11 @@
     libva 
     transmission-gtk
     lutris
+    wineWowPackages.waylandFull
     gamemode
     mangohud
     goverlay
     pinta
-    dunst
 
     # Gnome packages.
     gnome.nautilus
@@ -55,13 +52,13 @@
     gnome.gnome-tweaks
     polkit_gnome
     gnome.gnome-keyring
-    gnome.seahorse
 
     # Work.
     github-desktop
     libreoffice
     gimp
     python3
+    logseq
 
     # Utils.
     libsecret
@@ -75,6 +72,7 @@
     gojq
     acpi
     xorg.xwininfo
+    openssl
 
     # Fonts. 
     cascadia-code
