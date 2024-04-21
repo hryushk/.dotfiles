@@ -2,10 +2,7 @@
 
 {
 
-  imports = [ 
-      ./additional-configuration.nix
-      ./hardware-configuration.nix
-    ];
+  imports = [ ./additional-configuration.nix ./hardware-configuration.nix ./greetd.nix ];
 
   # Enable latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
@@ -35,12 +32,6 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  # Configure keymap in X11
-  services.xserver = {
-    layout = "us";
-    xkbVariant = "";
-  };
-
   # User account.
   users.users.hryu = {
     isNormalUser = true;
@@ -55,13 +46,6 @@
 
   # Hyprland, Sddm, xserver
   programs.hyprland.enable = true;
-  services.xserver = {
-    enable = true;
-    displayManager.sddm = {
-      enable = true;
-      wayland.enable = true; 
-    };
-  };
 
   programs.gnupg.agent = {
     enable = true;

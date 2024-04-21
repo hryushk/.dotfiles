@@ -2,7 +2,7 @@
 
 {
 
-  imports = [ ./hyprland ./kitty ./dunst ];  
+  imports = [ ./hyprland ./kitty ./dunst ./waybar ./tofi ];  
 
   home.username = "hryu";
   home.homeDirectory = "/home/hryu";
@@ -20,11 +20,9 @@
     # Default packages.
     wget
     vscodium
-    tofi
     firefox
     vesktop
     telegram-desktop
-    eww # temporary
     tor-browser
     steam
     obs-studio
@@ -66,14 +64,8 @@
     pavucontrol
     wireplumber
     glib
-    networkmanagerapplet
-    jq
-    socat
-    gojq
-    acpi
     xorg.xwininfo
     openssl
-    ventoy-full
 
     # Fonts. 
     cascadia-code
@@ -86,7 +78,7 @@
 
   qt = {
     enable = true;
-    platformTheme = "gtk";
+    platformTheme.name = "gtk";
     style.name = "gtk2";
   };
 

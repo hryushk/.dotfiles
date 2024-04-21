@@ -81,6 +81,9 @@
     };
   };
 
+  # Enable gsettings
+  environment.sessionVariables.XDG_DATA_DIRS = [ (pkgs.glib.getSchemaDataDirPath pkgs.gsettings-desktop-schemas) ];
+
   # Enable usb.
   services = {
   gvfs.enable = true;

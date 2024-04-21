@@ -7,14 +7,16 @@
     home.packages = with pkgs; [
         hyprshot
         hyprpicker
+        xdg-desktop-portal
         xdg-desktop-portal-hyprland
+        xdg-desktop-portal-wlr
+        xdg-desktop-portal-gtk 
         wlr-randr
         wl-clipboard
         brightnessctl
         gnome.gnome-themes-extra
         wlsunset
         xwayland
-        xdg-desktop-portal-gtk
         wlroots
         qt5ct
         libva
@@ -41,7 +43,7 @@
             exec-once = [
                 "${pkgs.hypridle}/bin/hypridle"
                 "${pkgs.hyprpaper}/bin/hyprpaper"
-                "${pkgs.eww}/bin/eww open bar"
+                "${pkgs.waybar}/bin/waybar"
                 "systemctl start --user polkit-gnome-authentication-agent-1"
                 "gnome-keyring-daemon --start"
                 "gsettings set org.gnome.desktop.wm.preferences button-layout :"
@@ -84,6 +86,7 @@
                 "XDG_SESSION_TYPE,wayland"
                 "XDG_SESSION_DESKTOP,Hyprland"
                 "MOZ_ENABLE_WAYLAND,1"
+                "QT_QPA_PLATFORM,wayland"
             ];
 
             misc = {
@@ -246,6 +249,8 @@
                 "noinitialfocus,class:^(xwaylandvideobridge)$"
                 "float,class:(system-monitor),title:(System Monitor)"
                 "float,class:(org.gnome.Calendar),title:(Calendar)"
+                "float,class:(org.gnome.Calculator),title:(Calculator)"
+                "size 375 500,class:(org.gnome.Calculator),title:(Calculator)"
                 "float,class:(pavucontrol),title:(Volume Control)"
                 "float,class:(steam)"
                 "float,class:(Warframe)"
