@@ -42,10 +42,7 @@
 
   # Packages
   nixpkgs.config.allowUnfree = true;
-  environment.systemPackages = with pkgs; [];
-
-  # Hyprland, Sddm, xserver
-  programs.hyprland.enable = true;
+  environment.systemPackages = with pkgs; [ ];
 
   programs.gnupg.agent = {
     enable = true;

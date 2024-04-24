@@ -1,7 +1,5 @@
 - kitty customization 
 (
-    - font
-    - background
     - shell
 )
 
@@ -12,6 +10,10 @@
     - transparency 
     - borders 
 )
+
+- default folders 
+
+- auto update configuration
 
 - gtk theme
 (

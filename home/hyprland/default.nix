@@ -9,8 +9,6 @@
         hyprpicker
         xdg-desktop-portal
         xdg-desktop-portal-hyprland
-        xdg-desktop-portal-wlr
-        xdg-desktop-portal-gtk 
         wlr-randr
         wl-clipboard
         brightnessctl

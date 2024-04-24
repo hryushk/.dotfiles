@@ -25,9 +25,6 @@
       CPU_MIN_PERF_ON_BAT = 0;
       CPU_MAX_PERF_ON_BAT = 80;
 
-      RADEON_DPM_PERF_LEVEL_ON_AC = "auto";
-      RADEON_DPM_PERF_LEVEL_ON_BAT = "auto";
-
       RADEON_DPM_STATE_ON_BAT = "balanced";
       RADEON_DPM_STATE_ON_AC = "performance";
 
@@ -86,8 +83,15 @@
 
   # Enable usb.
   services = {
-  gvfs.enable = true;
-  udisks2.enable = true;
+    gvfs.enable = true;
+    udisks2.enable = true;
+    devmon.enable = true;
+  };
+
+  xdg.portal = {
+    enable = true;
+    configPackages = [ pkgs.xdg-desktop-portal-hyprland ];
+    extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
   };
 
 }

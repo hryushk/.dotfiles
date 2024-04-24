@@ -37,7 +37,7 @@
     pinta
 
     # Gnome packages.
-    gnome.nautilus
+    # gnome.nautilus
     gnome.eog
     gnome.file-roller
     gnome.simple-scan
@@ -56,7 +56,7 @@
     libreoffice
     gimp
     python3
-    logseq
+    logseq 
 
     # Utils.
     libsecret
@@ -66,6 +66,7 @@
     glib
     xorg.xwininfo
     openssl
+    ventoy-full
 
     # Fonts. 
     cascadia-code
