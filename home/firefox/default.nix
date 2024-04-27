@@ -26,6 +26,11 @@
                             }
 
                             {
+                                name = "GitHub";
+                                url = "https://github.com/";
+                            }
+
+                            {
                                 name = "NixOS pkgs";
                                 url = "https://search.nixos.org/packages";
                             }
