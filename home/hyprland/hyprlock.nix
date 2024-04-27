@@ -63,6 +63,21 @@
         valign = center
     }
 
+    label {
+        monitor = 
+        text = $TIME
+        color = rgba(200, 200, 200, 1.0)
+        font_size = 75
+        font_family = Noto Sans
+        rotate = 0
+        position = 0, 180
+        halign = center
+        valign = center
+        shadow_passes = 5
+        shadow_size = 10
+
+    }
+
     '';
 
 }

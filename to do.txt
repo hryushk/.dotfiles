@@ -1,33 +1,6 @@
+- ags bar 
+
 - kitty customization 
 (
-    - shell
+    - shell (some theming required)
 )
-
-- hyprlock customization
-(
-    - clock
-    - colors
-    - transparency 
-    - borders 
-)
-
-- default folders 
-
-- auto update configuration
-
-- gtk theme
-(
-    - new or fix old 
-)
-
-- declarative configuration
-(
-    - firefox
-    - obs
-    - goverlay
-    - vscodium
-    - vesktop 
-    - logseq
-)
-
-- ags bar 

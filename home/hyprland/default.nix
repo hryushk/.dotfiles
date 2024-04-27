@@ -50,7 +50,7 @@
             # vars
             "$mainMod" = "SUPER";
             "$terminal" = "${pkgs.kitty}/bin/kitty";
-            "$fileManager" = "${pkgs.gnome.nautilus}/bin/nautilus";
+            "$fileManager" = "${pkgs.xfce.thunar}/bin/thunar";
             "$menu" = "tofi-drun | xargs hyprctl dispatch exec --";
             "$brouser" = "${pkgs.firefox}/bin/firefox";
             "$code" = "codium";

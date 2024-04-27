@@ -2,7 +2,7 @@
 
 {
 
-  imports = [ ./hyprland ./kitty ./dunst ./waybar ./tofi ];  
+  imports = [ ./hyprland ./kitty ./dunst ./waybar ./tofi ./firefox ./vscodium ];  
 
   home.username = "hryu";
   home.homeDirectory = "/home/hryu";
@@ -19,14 +19,10 @@
   home.packages = with pkgs; [
     # Default packages.
     wget
-    vscodium
-    firefox
     vesktop
     telegram-desktop
     tor-browser
     steam
-    obs-studio
-    obs-studio-plugins.obs-vaapi
     libva 
     transmission-gtk
     lutris
@@ -35,6 +31,7 @@
     mangohud
     goverlay
     pinta
+    xfce.thunar
 
     # Gnome packages.
     # gnome.nautilus
@@ -57,6 +54,7 @@
     gimp
     python3
     logseq 
+    glibc
 
     # Utils.
     libsecret
@@ -71,6 +69,10 @@
     # Fonts. 
     cascadia-code
     nerdfonts
+
+    # OBS-Studio
+    obs-studio
+    obs-studio-plugins.obs-vaapi
   ];
 
   home.file = {};
