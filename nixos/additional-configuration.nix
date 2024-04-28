@@ -48,8 +48,13 @@
     #jack.enable = true;
   };
 
+  # Flatpak.
   services.flatpak.enable = true;
+
+  # Printing.
   services.printing.enable = true;
+  services.printing.drivers = [ pkgs.hplipWithPlugin ];
+  services.printing.startWhenNeeded = true; # optional
 
   boot.initrd.kernelModules = [ "amdgpu" ];
   services.xserver.videoDrivers = [ "amdgpu" ];

@@ -31,10 +31,9 @@
     mangohud
     goverlay
     pinta
-    xfce.thunar
 
     # Gnome packages.
-    # gnome.nautilus
+    evince
     gnome.eog
     gnome.file-roller
     gnome.simple-scan
