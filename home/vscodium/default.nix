@@ -7,6 +7,7 @@
         package = pkgs.vscodium;
         extensions = with pkgs; [
             vscode-extensions.bbenoist.nix
+            vscode-extensions.jnoortheen.nix-ide
             vscode-extensions.ms-python.python
         ];
         userSettings = {

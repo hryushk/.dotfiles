@@ -53,7 +53,6 @@
     gimp
     python3
     logseq 
-    glibc
 
     # Utils.
     libsecret
@@ -98,6 +97,14 @@
     iconTheme = {
       package = pkgs.flat-remix-icon-theme;
       name = "Flat-Remix-Black-Dark";
+    };
+
+    gtk3.extraConfig = {
+      gtk-decoration-layout = "appmenu:none"; 
+    };
+
+    gtk4.extraConfig = {
+      gtk-decoration-layout = "appmenu:none";
     };
   };
 
