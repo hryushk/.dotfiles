@@ -2,7 +2,7 @@
 
 {
 
-  imports = [ ./additional-configuration.nix ./hardware-configuration.nix ./greetd.nix ];
+  imports = [ ./additional-configuration.nix ./hardware-configuration.nix ./greetd.nix ./nvidia.nix ];
 
   # Enable latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_zen;

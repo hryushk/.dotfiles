@@ -2,7 +2,7 @@
 
 {
 
-  imports = [ ./hyprland ./kitty ./dunst ./waybar ./tofi ./firefox ./vscodium ];  
+  imports = [ ./hyprland ./kitty ./dunst ./waybar ./tofi ./firefox ./vscodium ./neovim ./ags ];  
 
   home.username = "hryu";
   home.homeDirectory = "/home/hryu";
@@ -71,6 +71,8 @@
     # OBS-Studio
     obs-studio
     obs-studio-plugins.obs-vaapi
+
+    minecraft
   ];
 
   home.file = {};
